@@ -48,8 +48,14 @@ padding: 0;
 box-sizing: inherit;
 }
 
+.camin_hidden{
+    position: absolute;
+    z-index: -1;
+    top: -9999px;
+    left: -9999px;
+}
 
-.mySwiper{
+.mySwiper_main{
     height: 100vh;
 }
 
@@ -107,6 +113,87 @@ box-sizing: inherit;
     align-items: center;
     justify-content: center;
 }
+.camine{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem 10%;
+}
+
+.camine_btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.camine_img{
+    width: 100%;
+    /* border-radius: 1rem; */
+    height: 100%;
+    object-fit: cover;
+}
+
+.camine_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+}
+
+.camine_btns_btn{
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    width: 100%;
+    border: 2px solid #1E157E;
+    text-align: center;
+}
+
+.camine_btns_btn_active{
+    background-color: white;
+    color: #1E157E;
+    border: 2px solid #1E157E;
+    font-weight: bold;
+}
+
+.camine_content_text_title{
+    font-size: 3rem;
+    color: #1E157E;
+    font-weight: bold;
+}
+.camine_content_text_subititle{
+    font-size: 1.6rem;
+}
+
+.mySwiper_camine{
+    width: 400px;
+    height: 320px;
+}
+.swiper-slide_camine{
+  
+    background-color: #1E157E;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 1200px){
+    .camine{
+        padding: 4rem 5%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .camine{
+        padding: 4rem 2%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .camine_content{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
 
 @media screen and (max-width: 700px){
     .swiper_item_text{
