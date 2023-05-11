@@ -47,6 +47,9 @@ padding: 0;
 *::before {
 box-sizing: inherit;
 }
+.margin-top{
+    margin-top: 6rem;
+}
 
 .camin_hidden{
     position: absolute;
@@ -196,7 +199,7 @@ box-sizing: inherit;
     width: 100%;
     object-fit: cover;
   }
-  .container_template_cantina{
+  .container_template_dreapta{
     padding: 40px 0px 30px;
     display: grid;
     align-items: center;  
@@ -216,27 +219,28 @@ box-sizing: inherit;
     }
   }
   
-  .image_template_policlinca{
+  .image_template_stanga{
 
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    object-fit: cover;
   }
   
-  .p_template_policlinca{
+  .p_template_stanga{
     font-size: 15px;
-    padding-right: 30px;
+  
   }
-  .p_template_policlinca ul{
+  .p_template_stanga ul{
     margin-left: 15px;
     margin-bottom: 20px;
   }
-  .p_template_cantina{
+  .p_template_dreapta{
     font-size: 15px;
    
   }
   
-  .image_template_cantina{
+  .image_template_dreapta{
     padding-right: 15px;
 
     display: flex;
@@ -268,6 +272,158 @@ box-sizing: inherit;
     line-height: 1.5;
 }
 
+.baneficii_titlu{
+    background-color: #2e3192;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.container_template h1{
+    color: #1E157E;
+}
+.image_template_dublu{
+    position: relative;
+}
+.image_template_dublu_1{
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1rem;
+    border: 1px solid #1E157E;
+    transition: all .2s;
+  
+}
+.image_template_dublu_1:hover{
+    z-index: 10;
+    transform: scale(1.1);
+}
+.image_template_dublu_2{
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 5rem;
+    left: 20rem;
+    border-radius: 1rem;
+    border: 1px solid #1E157E;
+    transition: all .2s;
+   
+}
+.image_template_dublu_2:hover{
+    z-index: 10;
+    transform: scale(1.1);
+}
+
+.baza h1{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.baza_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: stretch;
+    gap: 2rem;
+}
+.baza_container>*{
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: #1E157E;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 100%;
+    border: 1px solid #1E157E;
+    text-transform: uppercase;
+    text-align: center;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.mySwiper_bazaSportiva2 img{
+    width: 100%;
+}
+
+.mySwiper_bazaSportiva2
+{
+    background-color: #66b68f;
+    padding: 3rem !important;
+}
+.burse{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.burse_text{
+    color: rgb(128, 130, 133);
+    font-size: 1.4rem;
+}
+
+.burse_cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.burse_cards_card{
+    background-color: #ECECED;
+    padding: 2rem;
+    color: #1E157E;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.burse_cards_card_title{
+    font-size: 1.8rem;
+    /* height: 6rem; */
+}
+.burse_cards_card_price{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.burse_cards_card_limite{
+    color: #1E157E;
+    font-size: 1.2rem;
+    padding: 0;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 1400px){
+    .container_baza1{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .container_baza1{
+        margin-bottom: 0rem !important;
+    }
+    .image_template_stanga{
+        display: flex;
+        align-items: center;
+        gap:2rem;
+        width: 100%;
+    }
+    .image_template_dublu_1, .image_template_dublu_2{
+        position: static;
+        width: 100%;
+        border: none;
+    }
+    .margin-top{
+        margin-top: 2rem;
+    }
+    .baza h1{
+        text-align: left;
+    }
+}
 
 @media screen and (max-width: 1200px){
     .camine, .camine_descriere, .container_template{
@@ -286,9 +442,19 @@ box-sizing: inherit;
         grid-template-columns: 1fr;
         text-align: center;
     }
+    .image_template_stanga{
+        flex-direction: column;
+    }
+    .baza_container {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-
+@media screen and (max-width: 800px){
+    .burse{
+        grid-template-columns: 1fr;
+    }
+}
 @media screen and (max-width: 700px){
     .swiper_item_text{
         align-items: center;
@@ -311,14 +477,23 @@ box-sizing: inherit;
     .mySwiper_camine{
         width: 300px;
     }
-    .container_template_cantina, .container_template_policlinica{
+    .container_template_dreapta, .container_template_policlinica{
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+    .baza_container {
+        grid-template-columns: 1fr;
+    }
+    .baneficii_titlu{
+        margin-bottom: -3rem;
     }
 }
 
 @media screen and (max-width: 400px){
     .mySwiper_camine{
         width: 250px;
+    }
+    .burse_cards{
+        grid-template-columns: 1fr 1fr;
     }
 }
