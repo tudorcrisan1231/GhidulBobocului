@@ -112,6 +112,7 @@ box-sizing: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .camine{
     display: flex;
@@ -170,19 +171,112 @@ box-sizing: inherit;
     height: 320px;
 }
 .swiper-slide_camine{
-  
     background-color: #1E157E;
     border-radius: 1rem;
+
 }
 
+
+
+
+
+
+.container_template_policlinica{
+    padding: 40px 0px 30px;
+    display: grid;
+    align-items: center;  
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
+  }
+  .img_template{
+    width: 100%;
+    object-fit: cover;
+  }
+  .container_template_cantina{
+    padding: 40px 0px 30px;
+    display: grid;
+    align-items: center;  
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  .image_template_policlinca{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .p_template_policlinca{
+    font-size: 15px;
+    padding-right: 30px;
+  }
+  .p_template_policlinca ul{
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+  .p_template_cantina{
+    font-size: 15px;
+   
+  }
+  
+  .image_template_cantina{
+    padding-right: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+.container_template{
+    border-top: 1.5px solid #2e3192;
+    padding: 4rem 10%;
+}
+
+
+.camine_descriere{
+    padding: 4rem 10%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.camine_descriere_title{
+    font-size: 48px;
+    font-weight: 400;
+    color: #2e3192;
+}
+.camine_descriere_text{
+    font-size: 18px;
+    color: #808285;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
 @media screen and (max-width: 1200px){
-    .camine{
+    .camine, .camine_descriere, .container_template{
         padding: 4rem 5%;
     }
 }
 
 @media screen and (max-width: 1000px){
-    .camine{
+    .camine, .camine_descriere, .container_template{
         padding: 4rem 2%;
     }
 }
@@ -206,5 +300,25 @@ box-sizing: inherit;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .camine_btns{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .mySwiper_camine{
+        width: 300px;
+    }
+    .container_template_cantina, .container_template_policlinica{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .mySwiper_camine{
+        width: 250px;
     }
 }
