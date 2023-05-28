@@ -765,14 +765,17 @@ box-sizing: inherit;
 
 
 
-
-  .wrapper{
-    width: 600px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  .wrapper_container{
+    max-width: 600px;
+    overflow-x: auto;
     margin: 0 auto;
+  }
+  .wrapper{
+    width: 100%;
+    background: #f2f2f2;
+    border-radius: 10px;
     margin-bottom: 2rem;
+    padding: 1rem;
   }
   .wrapper header{
     display: flex;
@@ -809,7 +812,8 @@ box-sizing: inherit;
     padding: 20px;
   }
   .calendar ul{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
     flex-wrap: wrap;
     list-style: none;
     text-align: center;
@@ -819,7 +823,7 @@ box-sizing: inherit;
   }
   .calendar li{
     color: #333;
-    width: calc(100% / 7);
+    width: 100%;
     font-size: 1.07rem;
   }
   .calendar .weeks li{
@@ -848,9 +852,10 @@ box-sizing: inherit;
   
   .activity-text {
     margin-top: 5px;
-    font-size: 0.6rem;
+    font-size: 1.2rem;
     color: #999999;
   }
+
   
   .days li.inactive{
     color: #aaa;
@@ -862,7 +867,7 @@ box-sizing: inherit;
     position: absolute;
     content: "";
     left: 50%;
-    top: 50%;
+    top: 20%;
     height: 40px;
     width: 40px;
     z-index: -1;
@@ -872,4 +877,15 @@ box-sizing: inherit;
   .days li.active::before{
     background: #9B59B6;
   }
+  .day,.inactive{
+    font-size: 1.4rem !important;
+  }
   
+  @media screen and (max-width: 600px){
+    .calendar{
+        padding: .5rem;
+    }
+    .wrapper{
+        padding: 0;
+    }
+  }
