@@ -60,6 +60,7 @@ box-sizing: inherit;
 
 .mySwiper_main{
     height: 70vh;
+    width: 100%;
 }
 
 .swiper_img{
@@ -184,7 +185,9 @@ box-sizing: inherit;
 
 
 
-
+.text-right{
+    text-align: right;
+}
 
 
 .container_template_policlinica{
@@ -201,6 +204,7 @@ box-sizing: inherit;
   .img_template{
     width: 100%;
     object-fit: cover;
+    border-radius: 5px;
   }
   .container_template_dreapta{
     padding: 40px 0px 30px;
@@ -287,6 +291,8 @@ box-sizing: inherit;
 }
 .container_template h1{
     color: #1E157E;
+    line-height: 35px;
+    margin-bottom: 20px;
 }
 .image_template_dublu{
     position: relative;
@@ -655,6 +661,10 @@ box-sizing: inherit;
     .container_template_orarImg img{
         width: 100%;
     }
+    .wrapper_container{
+        margin: 0 1rem !important;
+
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -767,7 +777,7 @@ box-sizing: inherit;
 
   .wrapper_container{
     max-width: 600px;
-    overflow-x: auto;
+    overflow-x: hidden;
     margin: 0 auto;
   }
   .wrapper{
@@ -794,18 +804,19 @@ box-sizing: inherit;
     color: #878787;
     text-align: center;
     line-height: 38px;
-    font-size: 1.9rem;
+    font-size: 2.9rem;
     user-select: none;
-    border-radius: 50%;
+    border-radius: 5px;
+    background-color: rgba(222, 214, 214, 0.474);
   }
   .icons span:last-child{
     margin-right: -10px;
   }
   header .icons span:hover{
-    background: #f2f2f2;
+    background: rgba(222, 214, 214, 0.674);
   }
   header .current-date{
-    font-size: 1.45rem;
+    font-size: 2.45rem;
     font-weight: 500;
   }
   .calendar{
@@ -824,7 +835,7 @@ box-sizing: inherit;
   .calendar li{
     color: #333;
     width: 100%;
-    font-size: 1.07rem;
+    font-size: 1.5rem;
   }
   .calendar .weeks li{
     font-weight: 500;
@@ -832,9 +843,10 @@ box-sizing: inherit;
   }
   .calendar .days li{
     z-index: 1;
-    cursor: pointer;
+    /* cursor: pointer; */
     position: relative;
     margin-top: 30px;
+    padding: 10px;
   }
   .activity-bar {
     width: 100%;
@@ -846,24 +858,24 @@ box-sizing: inherit;
     background-color: #ff9800;
   }
   
-  .activity-bar:hover {
-    background-color: #f2f2f2; /* Set the same color as the default state */
-  }
+  /* .activity-bar:hover {
+    background-color: #f2f2f2; 
+  } */
   
   .activity-text {
     margin-top: 5px;
     font-size: 1.2rem;
     color: #999999;
+    width: 100%;
+    height: 20px;
   }
 
   
   .days li.inactive{
     color: #aaa;
   }
-  .days li.active{
-    color: #fff;
-  }
-  .days li::before{
+
+  /* .days li::before{
     position: absolute;
     content: "";
     left: 50%;
@@ -876,16 +888,54 @@ box-sizing: inherit;
   }
   .days li.active::before{
     background: #9B59B6;
-  }
-  .day,.inactive{
+  } */
+.day,.inactive{
     font-size: 1.4rem !important;
-  }
+}
+
+.calendar_legenda{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.calendar_legenda_item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.calendar_legenda_item_color{
+    width: 40px;
+    height: 20px;
+    border-radius: 5px;
+}
   
-  @media screen and (max-width: 600px){
+@media screen and (max-width: 600px){
     .calendar{
         padding: .5rem;
     }
     .wrapper{
         padding: 0;
     }
-  }
+    .wrapper header{
+        padding: 15px;
+    }
+}
+.days li.active{
+    background-color: #1E157E;
+    color: white;
+    border-radius: 2px;
+}
+.day_color_predare{
+    background-color: rgb(251, 251, 0, .2);
+}
+.day_color_vacanta{
+    background-color: rgb(1, 136, 1, .2);
+}
+.day_color_sesiune{
+    background-color: rgb(204, 3, 3, .2);
+}
+.day_color_curenta{
+    background-color: #1E157E;
+}

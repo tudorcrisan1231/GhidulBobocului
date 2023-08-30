@@ -16,9 +16,9 @@
                 <img class="swiper_img" src="imgs/img1.JPG" alt="">
 
                 <div class="swiper_item_text">
-                    <div class="swiper_item_title">Universitatea Politehnica Timișoara</div>
+                    <div class="swiper_item_title">Viața la cămin</div>
                     <div class="swiper_item_sub">Universitatea Politehnica Timișoara este o instituție de învățământ superior cu profil tehnic din Timișoara, România, înființată în anul 1920.</div>
-                    <a href="#test" class="swiper_item_btn">Catre sectiune</a>
+                    <a href="#viata_la_camin" class="swiper_item_btn">Catre sectiune</a>
                 </div>
 
                 <div class="swiper_layout"></div>
@@ -28,9 +28,9 @@
                 <img class="swiper_img" src="imgs/img2.JPG" alt="">
 
                 <div class="swiper_item_text">
-                    <div class="swiper_item_title">Universitatea Politehnica Timișoara 2222</div>
+                    <div class="swiper_item_title">Beneficii</div>
                     <div class="swiper_item_sub">Universitatea Politehnica Timișoara este o instituție de învățământ superior cu profil tehnic din Timișoara, România, înființată în anul 1920. 222</div>
-                    <a href="#" class="swiper_item_btn">Catre sectiune 222</a>
+                    <a href="#beneficii" class="swiper_item_btn">Catre sectiune</a>
                 </div>
 
                 <div class="swiper_layout"></div>
@@ -40,9 +40,21 @@
                 <img class="swiper_img" src="imgs/img3.JPG" alt="">
 
                 <div class="swiper_item_text">
-                    <div class="swiper_item_title">Universitatea Politehnica Timișoara 3333</div>
+                    <div class="swiper_item_title">Tips and Tricks</div>
                     <div class="swiper_item_sub">Universitatea Politehnica Timișoara este o instituție de învățământ superior cu profil tehnic din Timișoara, România, înființată în anul 1920. 333</div>
-                    <a href="#" class="swiper_item_btn">Catre sectiune 333</a>
+                    <a href="#tips_and_tricks" class="swiper_item_btn">Catre sectiune</a>
+                </div>
+
+                <div class="swiper_layout"></div>
+            </div>
+
+            <div class="swiper-slide swiper_item">
+                <img class="swiper_img" src="imgs/ccoc_back.JPG" alt="">
+
+                <div class="swiper_item_text">
+                    <div class="swiper_item_title">Centrul de Consiliere și Orientare în Carieră</div>
+                    <div class="swiper_item_sub">Universitatea Politehnica Timișoara este o instituție de învățământ superior cu profil tehnic din Timișoara, România, înființată în anul 1920. 333</div>
+                    <a href="#ccoc" class="swiper_item_btn">Catre sectiune</a>
                 </div>
 
                 <div class="swiper_layout"></div>
@@ -53,7 +65,7 @@
     </div>
 
     <div class="camine_descriere">
-        <div class="camine_descriere_title">Viața la cămin</div>
+        <div class="camine_descriere_title" id="viata_la_camin">Viața la cămin</div>
         <div class="camine_descriere_text">
             În calitate de student la UPT, beneficiezi de un loc asigurat la cămin. Gestionarea locurilor și administrarea tuturor căminelor este realizată de Direcția Socială UPT, situată la parterul căminului 4C din complex. 
         </div>
@@ -247,7 +259,7 @@
     <!-- end -->
 
 
-    <div class="baneficii_titlu">
+    <div class="baneficii_titlu" id="beneficii">
         Beneficii
     </div>
     <div class="container_template" style="padding-bottom: 1rem;">
@@ -267,6 +279,8 @@
             </div>
             <img class="img_template" src="imgs/img1.JPG" alt="">
         </div>
+
+       
 
         <div class="container_template_policlinica container_baza1" style="position: relative; margin-bottom: 13rem;">
             <div class="image_template_stanga ">
@@ -517,7 +531,7 @@
         </div>
     </div>
     
-    <div class="baneficii_titlu">
+    <div class="baneficii_titlu" id="tips_and_tricks">
         Tips and Tricks
     </div>
 
@@ -724,166 +738,88 @@
             </header>
             <div class="calendar">
               <ul class="weeks">
-                <li>Mon</li>
-                <li>Tue</li>
-                <li>Wed</li>
-                <li>Thu</li>
-                <li>Fri</li>
-                <li>Sat</li>
-                <li>Sun</li>
+                <li>L</li>
+                <li>M</li>
+                <li>M</li>
+                <li>J</li>
+                <li>V</li>
+                <li>S</li>
+                <li>D</li>
               </ul>
               <ul class="days"></ul>
             </div>
           </div>
+
+          <div class="calendar_legenda">
+            <div class="calendar_legenda_item">
+                <div class="calendar_legenda_item_color day_color_curenta"></div>
+                <div class="calendar_legenda_item_name">Zi curenta</div>
+            </div>
+            <div class="calendar_legenda_item">
+                <div class="calendar_legenda_item_color day_color_predare"></div>
+                <div class="calendar_legenda_item_name">Predare</div>
+            </div>
+            <div class="calendar_legenda_item">
+                <div class="calendar_legenda_item_color day_color_vacanta"></div>
+                <div class="calendar_legenda_item_name">Vacanta</div>
+            </div>
+            <div class="calendar_legenda_item">
+                <div class="calendar_legenda_item_color day_color_sesiune"></div>
+                <div class="calendar_legenda_item_name">Sesiune</div>
+            </div>
+          </div>
     </div>
 
+    <div class="baneficii_titlu" id="ccoc">
+        CCOC
+    </div>
 
+    <div class="container_template" style="padding-bottom: 1rem;">
+        <div class="container_template_policlinica">
+            <div class="p_template_stanga">
+                <h1>Centrul de Consiliere și Orientare în Carieră</h1>
+                <p>CCOC este o structură a UPT care are rolul de a consilia și orienta
+                    studenții pentru atingerea succesului în carieră. </p>
+                <p>Serviciile puse la dispoziția studenților sunt:</p>
+                <ul>
+                    <li><strong>Orientare și consiliere în carieră:</strong> identificarea abilităților,
+                        aptitudinilor, intereselor și motivațiilor profesionale, traininguri de dezvoltare a competenţelor specifice traseului
+                        profesional ales, consiliere și asistență în alcătuirea unui
+                        plan personal de acțiune privind educația și viitoarea carieră
+                        precum și a portofoliului de angajare, pregătire pentru
+                        interviul de angajare, ateliere de dezvoltare a unor aptitudini
+                        care pot crește șansele inserției pe piața muncii etc;</li>
+                    <li><strong>Consiliere educațională:</strong> consiliere pentru alegerea
+                        studiilor, traininguri de dezvoltare a abilităților de luare
+                        a deciziilor, de stabilire a obiectivelor personale, de
+                        management al timpului, de gestionare a stresului în sesiune,
+                        consiliere și mentoring pentru studenții cu dificultăți de
+                        învățare, consiliere pentru studenții cu nevoi speciale;</li>
+                    <li>
+                        <strong>Relația cu mediul socio-economic:</strong> întâlniri cu reprezentanții
+                        angajatorilor și profesioniști din diferite domenii, prezentări
+                        și vizite în companii, oferte de practică, oferte de locuri de
+                        muncă, târguri de oferte de carieră;
+                    </li>
+                    <li>
+                        <strong>Consiliere și evaluare psihologică:</strong> testare psihologică
+                        cu instrumente specializate, autocunoașterea resurselor
+                        personale, asistență pentru depășirea situațiilor dificile sau
+                        chiar de criză etc.
+                    </li>
+                    <li>
+                        <strong>Voluntariat:</strong> implicarea în activitățile CCOC, în special
+                        Caravana UPT în licee și Zilele Carierei;
+                    </li>
+                </ul>
+                <p>
+                    Serviciile oferite de CCOC sunt gratuite și deschise tuturor studenților Politehnicii. Înscrierea se realizează printr-un formular.
+                </p>
+            </div>
+            <img class="img_template" src="imgs/ccoc.JPG" alt="">
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false
-            },
-            loop: true,
-        });
-
-        var swiper_camine = new Swiper(".mySwiper_camine", {
-            effect: "cards",
-            grabCursor: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false
-            },
-            // loop: true,
-        });
-
-        var swiper = new Swiper(".mySwiper_bazaSportiva2", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            freeMode: true,
-            autoplay: {
-                delay: 1500,
-                disableOnInteraction: false
-            },
-            loop: true,
-            breakpoints: {
-                600: {
-                slidesPerView: 2,
-                },
-                1000: {
-                slidesPerView: 3,
-                },
-            },
-            on: {
-                init: function() {
-                this.el.addEventListener('mouseenter', function() {
-                    this.autoplay.stop();
-                }.bind(this));
-                
-                this.el.addEventListener('mouseleave', function() {
-                    this.autoplay.start();
-                }.bind(this));
-                }
-            }
-        });
-
-
-
-        const daysTag = document.querySelector(".days"),
-  currentDate = document.querySelector(".current-date"),
-  prevNextIcon = document.querySelectorAll(".icons span");
-
-// getting new date, current year and month
-let date = new Date(),
-  currYear = date.getFullYear(),
-  currMonth = date.getMonth();
-
-
-// storing full name of all months in array
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
-const renderCalendar = () => {
-  let firstDayofMonth = new Date(currYear, currMonth, 0).getDay(), // getting first day of month
-    lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of month
-    lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(), // getting last day of month
-    lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate(); // getting last date of previous month
-  let liTag = "";
-
-  for (let i = firstDayofMonth; i > 0; i--) {
-    // creating li of previous month last days
-    liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
-  }
-
-  for (let i = 1; i <= lastDateofMonth; i++) {
-    // creating li of all days of current month
-    let isToday =
-      i === date.getDate() &&
-      currMonth === new Date().getMonth() &&
-      currYear === new Date().getFullYear()
-        ? "active"
-        : "";
-        liTag += `<li class="${isToday}">
-                <span class="day">${i}</span>
-                <div class="activity">
-                  <div class="activity-bar">
-                  <div class="activity-text">${months[currMonth]} ${i % 7 + 1}</div>
-                  </div>
-                </div>
-              </li>`; // Adding activity details section
-
-    
-  }
-
-
-  for (let i = lastDayofMonth; i < 6; i++) {
-    // creating li of next month first days
-    liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`;
-  }
-  currentDate.innerText = `${months[currMonth]} ${currYear}`; // passing current mon and yr as currentDate text
-  daysTag.innerHTML = liTag;
-};
-renderCalendar();
-
-prevNextIcon.forEach((icon) => {
-  // getting prev and next icons
-  icon.addEventListener("click", () => {
-    // adding click event on both icons
-    // if clicked icon is previous icon then decrement current month by 1 else increment it by 1
-    currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
-
-    if (currMonth < 0 || currMonth > 11) {
-      // if current month is less than 0 or greater than 11
-      // creating a new date of current year & month and pass it as date value
-      date = new Date(currYear, currMonth, new Date().getDate());
-      currYear = date.getFullYear(); // updating current year with new date year
-      currMonth = date.getMonth(); // updating current month with new date month
-    } else {
-      date = new Date(); // pass the current date as date value
-    }
-    renderCalendar(); // calling
-  });
-});
-    </script>
-
     <script src="app.js"></script>
 </body>
 </html>
