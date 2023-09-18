@@ -53,7 +53,6 @@ var swiper = new Swiper(".mySwiper_bazaSportiva2", {
         delay: 1500,
         disableOnInteraction: false
     },
-    loop: true,
     breakpoints: {
         600: {
         slidesPerView: 2,
@@ -111,7 +110,7 @@ const structura_an_universitar = [
     {
         type: 'predare',
         name: "Predare",
-        startDate: new Date('2023-09-25'),
+        startDate: new Date('2023-09-24'),
         endDate: new Date('2023-12-22')
     },
     {
@@ -187,7 +186,7 @@ function getTypeForDate(date) {
     }
     return 'vacanta';
 }
-console.log(getTypeForDate(new Date('2024-1-20')));
+// console.log(getTypeForDate(new Date('2024-1-20')));
 const renderCalendar = () => {
     let firstDayofMonth = new Date(currYear, currMonth, 0).getDay(), // getting first day of month
         lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of month
@@ -210,7 +209,7 @@ const renderCalendar = () => {
             ? "active"
             : "";
 
-        console.log(getTypeForDate(new Date(`${currYear}-${currMonth+1}-${i}`)), `${currYear}-${currMonth+1}-${i}`);
+        // console.log(getTypeForDate(new Date(`${currYear}-${currMonth+1}-${i}`)), `${currYear}-${currMonth+1}-${i}`);
 
         let day_color = '';
         if(getTypeForDate(new Date(`${currYear}-${currMonth+1}-${i}`)) == 'predare'){
